@@ -1,0 +1,8 @@
+{
+  "name": "ArchMail - Bulk Email Dispatcher & Bounce Tracker",
+  "description": "High-performance bulk email sender for Arch Linux power users with IMAP/SMTP login, real-time bounce tracking, spam score analyzer, and interval scheduler.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

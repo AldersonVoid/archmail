@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArchMail - Bulk Email Dispatcher & Bounce Tracker</title>
+    <meta name="description" content="High-performance bulk email sender for Arch Linux power users with IMAP/SMTP login, real-time bounce tracking, spam score analyzer, and interval scheduler." />
+    <meta property="og:title" content="ArchMail - Bulk Email Dispatcher & Bounce Tracker" />
+    <meta property="og:description" content="High-performance bulk email sender for Arch Linux power users with IMAP/SMTP login, real-time bounce tracking, spam score analyzer, and interval scheduler." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return _origFetch;
+            },
+            set: function(val) {
+              _origFetch = val;
+            }
+          });
+        } catch (e) {}
+
+        window.addEventListener('error', function(ev) {
+          if (ev && ev.filename && (
+            ev.filename.indexOf('chrome-extension://') !== -1 ||
+            ev.filename.indexOf('moz-extension://') !== -1 ||
+            ev.filename.indexOf('safari-web-extension://') !== -1
+          )) {
+            ev.stopImmediatePropagation();
+            ev.preventDefault();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body class="bg-[#0b0e14] text-[#d6deeb] antialiased selection:bg-[#179299]/30 selection:text-[#a6d189] min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
